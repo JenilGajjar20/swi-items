@@ -1,9 +1,30 @@
 <template>
-  <div>Spirals Page</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 px-4">
+    <div
+      v-for="spiral in spirals"
+      :key="spiral.id"
+      class="border border-gray-500 rounded py-3 px-4"
+    >
+      <h4 class="text-xl font-semibold">
+        <router-link :to="`/items/spiral/${spiral.id}`">{{
+          spiral.name
+        }}</router-link>
+      </h4>
+      <p class="font-medium py-2">Rs. {{ spiral.price }}</p>
+    </div>
+  </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "PotatoSpiral",
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState(["spirals"]),
+  },
 };
 </script>

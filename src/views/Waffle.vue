@@ -6,7 +6,9 @@
       class="border border-gray-500 rounded py-3 px-4"
     >
       <h4 class="text-xl font-semibold">
-        <router-link :to="`/items/${waffle.id}`">{{ waffle.name }}</router-link>
+        <router-link :to="`/items/waffle/${waffle.id}`">{{
+          waffle.name
+        }}</router-link>
       </h4>
       <p class="font-medium py-2">Rs. {{ waffle.price }}</p>
       <p class="text-sm text-gray-500">{{ waffle.description }}</p>
@@ -24,14 +26,15 @@
 </template>
 
 <script>
-import waffles from "@/data/waffle";
+import { mapState } from "vuex";
 
 export default {
   name: "TheWaffle",
   data() {
-    return {
-      waffles,
-    };
+    return {};
+  },
+  computed: {
+    ...mapState(["waffles"]),
   },
 };
 </script>
