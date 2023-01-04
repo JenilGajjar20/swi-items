@@ -27,7 +27,7 @@ export default new Router({
       component: Spirals,
     },
     {
-      path: "/items",
+      path: "/items/:id",
       name: "items",
       component: Items,
     },

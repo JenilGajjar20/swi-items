@@ -4,7 +4,6 @@
       <router-link to="/">Home</router-link>
       <router-link to="/waffle">Waffle</router-link>
       <router-link to="/spirals">Spirals</router-link>
-      <router-link to="/items">Items</router-link>
     </div>
     <router-view></router-view>
   </div>
