@@ -1,16 +1,17 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 px-4">
     <div
-      v-for="spiral in spirals"
-      :key="spiral.id"
+      v-for="pancake in pancakes"
+      :key="pancake.id"
       class="border border-gray-500 rounded py-3 px-4"
     >
       <h4 class="text-xl font-semibold">
-        <router-link :to="`items/spirals/${spiral.id}`">{{
-          spiral.name
+        <router-link :to="`items/pancakes/${pancake.id}`">{{
+          pancake.name
         }}</router-link>
       </h4>
-      <p class="font-medium py-2">Rs. {{ spiral.price }}</p>
+      <p class="font-medium py-2">Rs. {{ pancake.price }}</p>
+      <p class="text-sm text-gray-500">{{ pancake.description }}</p>
     </div>
   </div>
 </template>
@@ -19,12 +20,9 @@
 import { mapState } from "vuex";
 
 export default {
-  name: "PotatoSpiral",
-  data() {
-    return {};
-  },
+  name: "ThePancake",
   computed: {
-    ...mapState(["spirals"]),
+    ...mapState(["pancakes"]),
   },
 };
 </script>

@@ -1,22 +1,22 @@
 export default [
   {
     id: 0,
-    name: "Crispy Salted",
+    name: "Classic Salted",
     price: 100,
   },
   {
     id: 1,
-    name: "Sale and Pepper",
-    price: 100,
+    name: "Spicy Cheese(Dry)",
+    price: 120,
   },
   {
     id: 2,
-    name: "Schezwan Sauce",
-    price: 150,
+    name: "Garden Fresh(With mayo)",
+    price: 160,
   },
   {
     id: 3,
-    name: "Cheese Chipotle",
+    name: "Butter garlic fries",
     price: 180,
   },
   {
@@ -26,12 +26,12 @@ export default [
   },
   {
     id: 5,
-    name: "Butter garlic fries",
+    name: "Cheese Schezwan",
     price: 180,
   },
   {
     id: 6,
-    name: "Peri Peri",
-    price: 120,
+    name: "Cheese Chilly Fries",
+    price: 180,
   },
 ];

@@ -3,6 +3,8 @@ import Router from "vue-router";
 import Home from "../views/Home.vue";
 import Waffle from "../views/Waffle.vue";
 import Spirals from "../views/Spirals.vue";
+import Pancakes from "../views/Pancakes.vue";
+import Fries from "../views/Fries.vue";
 import Items from "../views/Items.vue";
 
 Vue.use(Router);
@@ -25,6 +27,16 @@ export default new Router({
       path: "/spirals",
       name: "spirals",
       component: Spirals,
+    },
+    {
+      path: "/pancakes",
+      name: "pancakes",
+      component: Pancakes,
+    },
+    {
+      path: "/fries",
+      name: "fries",
+      component: Fries,
     },
     {
       path: "/items/:itemname/:id",

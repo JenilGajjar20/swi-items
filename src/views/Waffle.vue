@@ -6,7 +6,7 @@
       class="border border-gray-500 rounded py-3 px-4"
     >
       <h4 class="text-xl font-semibold">
-        <router-link :to="`/items/waffle/${waffle.id}`">{{
+        <router-link :to="`items/waffles/${waffle.id}`">{{
           waffle.name
         }}</router-link>
       </h4>

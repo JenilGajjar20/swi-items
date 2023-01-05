@@ -1,6 +1,6 @@
 export default [
   {
-    id: 1,
+    id: 0,
     name: "Chocolate Factory",
     toppings: ["Choco Balls", "Vanilla ice-cream"],
     price: 320,
@@ -8,7 +8,7 @@ export default [
       "Chocolate based waffle with belgium dark and milk chocolate drizzle with choco balls and vanilla ice cream.",
   },
   {
-    id: 2,
+    id: 1,
     name: "Nuts over Nutella",
     toppings: ["Nuts", "Vanilla ice-cream"],
     price: 420,
@@ -16,7 +16,7 @@ export default [
       "Chocolate based waffle with Nutella and Nuts as toppings with vanilla ice cream.",
   },
   {
-    id: 3,
+    id: 2,
     name: "Sinfully Red",
     toppings: ["Brownie Crumbs"],
     price: 325,
@@ -24,7 +24,7 @@ export default [
       "Red Velvet based waffle with belgium white chocolate and cream cheese with brownie crumbs on top.",
   },
   {
-    id: 4,
+    id: 3,
     name: "Triple Chocolate Delight",
     toppings: [],
     price: 380,
@@ -32,7 +32,7 @@ export default [
       "Chocolate based waffle with belgium dark, white and milk chocolate drizzle with vanilla ice cream",
   },
   {
-    id: 5,
+    id: 4,
     name: "Check Mate",
     toppings: ["Choco Chips"],
     price: 320,
@@ -40,7 +40,7 @@ export default [
       "Chocolate based waffle with belgium dark and white chocolate drizzle with white and dark choco chips and vanilla ice cream.",
   },
   {
-    id: 6,
+    id: 5,
     name: "Signature Nutella Strawberry",
     toppings: ["Strawberry", "cream", "sugar"],
     price: 420,
@@ -48,7 +48,7 @@ export default [
       "Chocolate based waffle with nutella and fresh strawberries with whipped cream and icing sugar.",
   },
   {
-    id: 7,
+    id: 6,
     name: "Ferrero Rocher Nutella",
     toppings: ["Nutella", "Ferrero Rocher"],
     price: 500,
